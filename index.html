@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/stylesheets/global.css">
+    <link rel="stylesheet" href="./public/stylesheets/index.css">
+    <title>SNEAK</title>
+</head>
+<body>
+    <header class='header'>
+        <img src="./public/assets/logo.svg" alt="Logo" class="logo">
+        <input type="checkbox" id="mobile__menu" class="menu__button">
+        <label for="mobile__menu" class="menu__icon"><i class="fas fa-bars"></i></label>
+        <nav class='menu'>
+            <ul>
+                <li><a href="#" class="link">All</a></li>
+                <li><a href="#" class="link">Branding</a></li>
+                <li><a href="#" class="link">Web</a></li>
+                <li><a href="#" class="link">Photography</a></li>
+                <li><a href="#" class="link">App</a></li>
+                <li><a href="#"><i class="fas fa-search icon"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="landing">
+        <h1 class="title">EXPLORE BEYOND HORIZON</h1>
+        <h4 class="subtitle">Magna mundi referrentun quo, no rebum dignissm qui, Per quodsi accussata id, agam labores</h4>
+        <button type='button'>view our work</button>
+    </section>
+
+    <section class="gallery">
+        <div class="switch__view--wrapper">
+            <div>
+                <input type="radio" id="grid__view" name="view" checked>
+                <label class="button" for="grid__view"><i class="icon fas fa-th-large"></i></label>
+            </div>
+            <div>
+                <input type="radio" id="list__view" name="view">
+                <label class="button" for="list__view"><i class="icon fas fa-bars"></i></label>
+            </div>
+        </div>
+
+        <div class="filter__wrapper">
+            <div>
+                <input type="radio" id="All" name="category" checked>
+                <label class="button" for="All">All</label>
+            </div>
+            <div>
+                <input type="radio" id="Branding" name="category">
+                <label class="button" for="Branding">Branding</label>
+            </div>
+            <div>
+                <input type="radio" id="Web" name="category">
+                <label class="button" for="Web">Web</label>
+            </div>
+            <div>
+                <input type="radio" id="Photography" name="category">
+                <label class="button" for="Photography">Photography</label>
+            </div>
+            <div>
+                <input type="radio" id="App" name="category">
+                <label class="button" for="App">App</label>
+            </div>
+        </div>
+
+        <div class="grid__container" id="grids__container">
+            <div class="grid grid__view" id="default__grid">
+                <div class="column">
+                    <div class="item first" id="first__item">
+                        <div class="first__wrapper">
+                            <h3 class="title">CREATIVE LOGO</h3>
+                            <h5 class="subtitle">Branding</h5>
+                        </div>
+                    </div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="column">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="column">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </div>
+        <button class="showmore__button" id="more__button">
+            Show Me More
+        </button>
+    </section>
+
+    <footer>
+        <span class="copyright">© 2016 - <b>Sneak</b> All Right Reserved</span>
+        <div class="social__wrapper">
+            <a href="#" class="link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="link"><i class="fas fa-basketball-ball"></i></a>
+            <a href="#" class="link"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="link"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <script defer type="module" src="./src/App.js"></script>
+</body>
+</html>
