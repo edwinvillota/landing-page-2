@@ -5,11 +5,15 @@ class GlobalState extends Observable{
         super()
         this.category = ''
         this.view = 'grid__view'
+        this.page = 0
+        this.grids = []
     }
 
     changeCategory(newCategory){
         if (this.category !== newCategory) {
             this.category = newCategory
+            this.page = 0
+            this.grids = []
             this.notify(this)
         }
     }
@@ -21,8 +25,22 @@ class GlobalState extends Observable{
         }
     }
 
+    addGrid(newGrid){
+        this.grids.push(newGrid)
+        this.notify(this)
+    }
+
+    clearGrids(){
+        this.grids = []
+        this.notify(this)
+    }
+
     updateGrid(){
         this.notify(this)
+    }
+
+    incrementPage(){
+        this.page = this.page + 1
     }
 }
 
